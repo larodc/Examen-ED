@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package examen.ed;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author DAM109
+ */
+public class ExamenED {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    Scanner teclado = new Scanner(System.in);
+        System.out.println("Que opcion quieres: 1-Horas a segundos. 2-Kilometros a metros. 3-Km/h a m/s. 4-Salir");   
+        int op = teclado.nextInt();
+    switch(op){
+        case 1:
+        System.out.println("Cuantas horas?");
+            int horas = teclado.nextInt();
+            int segundos=horas*3600;
+        System.out.println("Tus horas en segundos son:"+segundos);
+        break;
+        
+        case 2:
+        System.out.println("Cuantos kilometros?");
+            int km = teclado.nextInt();
+            int metros=km*1000;
+            System.out.println("Tus hilometros pasados a metros son:"+metros);
+        break;
+            
+        case 3:
+            System.out.println("Cuantas km/hora?");
+            int km_h = teclado.nextInt();
+            int m_s=(int) (km_h/3.6);
+            System.out.println("Son en m/s:"+m_s);
+            break;
+        
+        case 4:
+            System.out.println("Salir");
+        break;
+            
+    
+    }
+    
+    
+    
+    
+    
